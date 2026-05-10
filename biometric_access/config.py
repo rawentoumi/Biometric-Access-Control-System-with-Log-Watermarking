@@ -20,8 +20,8 @@ WATERMARK_METHOD     = "LSB"  # "LSB" or "DCT"
 # ─── Email notifications ──────────────────────────────────────────────────────
 SMTP_SERVER          = "smtp.gmail.com"
 SMTP_PORT            = 587
-EMAIL_SENDER         = "votre_email@gmail.com"      # ← to modify
-EMAIL_PASSWORD       = "votre_mot_de_passe_app"     # ← email app password recommended 
+EMAIL_SENDER         = "youremail@gmail.com"      # ← to modify
+EMAIL_PASSWORD       = "your_app_password"     # ← email app password recommended 
 EMAIL_RECIPIENT      = "admin@exemple.com"           # ← to modify
 EMAIL_ENABLED        = False   # Set to True to enable email notifications (requires valid credentials)
 
