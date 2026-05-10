@@ -10,24 +10,24 @@ os.makedirs(LOGS_DIR,  exist_ok=True)
 os.makedirs(FACES_DIR, exist_ok=True)
 
 # ─── Facial recognition ───────────────────────────────────────────────────
-FACE_TOLERANCE       = 0.50   # Distance maximale pour considérer une correspondance
-RECOGNITION_MODEL    = "hog"  # "hog" (CPU, rapide) ou "cnn" (GPU, précis)
+FACE_TOLERANCE       = 0.50   # maximal distance for face recognition (lower = stricter)
+RECOGNITION_MODEL    = "hog"  # "hog" (CPU, rapide) ou "cnn" (GPU, precise)
 FRAME_SKIP           = 3      # Traiter 1 frame sur N (optimisation temps réel)
 
 # ─── Watermarking ─────────────────────────────────────────────────────────────
-WATERMARK_METHOD     = "LSB"  # "LSB" ou "DCT"
+WATERMARK_METHOD     = "LSB"  # "LSB" or "DCT"
 
 # ─── Email notifications ──────────────────────────────────────────────────────
 SMTP_SERVER          = "smtp.gmail.com"
 SMTP_PORT            = 587
-EMAIL_SENDER         = "votre_email@gmail.com"      # ← à modifier
-EMAIL_PASSWORD       = "votre_mot_de_passe_app"     # ← mot de passe d'application Gmail
-EMAIL_RECIPIENT      = "admin@exemple.com"           # ← à modifier
-EMAIL_ENABLED        = False   # Mettre True pour activer les envois
+EMAIL_SENDER         = "votre_email@gmail.com"      # ← to modify
+EMAIL_PASSWORD       = "votre_mot_de_passe_app"     # ← email app password recommended 
+EMAIL_RECIPIENT      = "admin@exemple.com"           # ← to modify
+EMAIL_ENABLED        = False   # Set to True to enable email notifications (requires valid credentials)
 
 # ─── Interface ────────────────────────────────────────────────────────────────
 WEBCAM_INDEX         = 0
-WINDOW_TITLE         = "Système de Contrôle d'Accès Biométrique"
+WINDOW_TITLE         = "Biometric Access Control"
 FRAME_WIDTH          = 640
 FRAME_HEIGHT         = 480
 
